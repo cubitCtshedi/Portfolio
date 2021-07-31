@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../Components/PText';
-import Button from '../Components/Button';
+// import Button from '../Components/Button';
 import AboutImg from '../assets/images/aboutME2.png';
 import AboutInfoItem from '../Components/AboutInfoItem';
 import ContactBanner from '../Components/ContactBanner';
