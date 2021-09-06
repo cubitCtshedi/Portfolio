@@ -37,17 +37,17 @@ export default function ServicesSection() {
           <ServicesSectionItem
             icon={<MdDesktopMac />}
             title="Design"
-            desc="I value simple content structure, clean design patterns, and thoughtful interactions."
+            desc="I focus on the three pillars: Content Structure, design patterns, and thoughtful interaction."
           />
           <ServicesSectionItem
             icon={<MdCode />}
             title="Front-End"
-            desc="I like to code things from scratch, and enjoy bringing ideas to life in the browser."
+            desc="Product Innovation? Let’s code it."
           />
           <ServicesSectionItem
             icon={<MdPhonelinkSetup />}
             title="UI/UX DESIGN"
-            desc="I like investigating and evaluating user requirements, and delivering an outstanding user experience, providing an exceptional and intuitive application design."
+            desc="seamless design, seamless experience."
           />
         </div>
       </div>

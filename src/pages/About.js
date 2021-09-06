@@ -84,19 +84,19 @@ export default function About() {
             <h2 className="about__heading">A Web Designer and Developer</h2>
             <div className="about__info">
               <PText>
-                I am from Rustenburg residing in Johannesburg. A place of
-                possibilities and dream chasers. I love design and coding. I
-                always try to design/develop stuff with my unique point of view.
-                I also love to create things that can be usefull to others.
-                <br />
-                <br />I started coding in Varsity.coding is also an art for me.
-                I love it and now I have the oppotunity to design along with the
-                coding. I find it interesting and I enjoy the process a lot.
+                As a rare hybrid of designer and developer, I understand the
+                visual, experimental, and functional aspects of creating for the
+                web. my mission is to bring more excellence, creativity and good
+                ideas into the world through web design.
                 <br />
                 <br />
-                My Vision is to make the world a better place. Now almost
-                everything is becoming better than ever.It is time for us to
-                create more creative stuff and help the world to become a place.
+                Although I am familiar with using frameworks, my websites are
+                mainly hand-coded with HTML5, CSS3, Bootstrap and JavaScript.
+                <br />
+                <br />
+                With a heavy emphasis on "progressive optimization", I find
+                innovative ways to push the boundaries of a website's front-end
+                code without compromising browser support and performance.
               </PText>
             </div>
             {/* <Button btnText="Download Resume" btnLink="#" /> */}

@@ -83,9 +83,10 @@ export default function AboutSection() {
             heading="About me"
           />
           <PText>
-            I am a web designer and developer from Johannesburg,South Africa. I
-            create professional websites. I love art and always try to show
-            unique views to the audience through my designs.
+            As a rare hybrid of designer and developer, I understand the visual,
+            experimental, and functional aspects of creating for the web. my
+            mission is to bring more excellence, creativity and good ideas into
+            the world through web design.
           </PText>
 
           <div className="aboutSection__buttons">
