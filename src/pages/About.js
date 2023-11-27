@@ -109,11 +109,14 @@ export default function About() {
         <div className="about__info__items">
           <div className="about__info__item">
             <h1 className="about__info__heading">EDUCATION</h1>
+            <AboutInfoItem title="Online" items={['Meta-FrontEnd Developer']} />
+
+            <AboutInfoItem title="College" items={['IIE Rosebank College']} />
+
             <AboutInfoItem
               title="School"
               items={['Geelhout Park Secondary School']}
             />
-            <AboutInfoItem title="College" items={['IIE Rosebank College']} />
           </div>
           <div className="about__info__item">
             <h1 className="about__info__heading">SKILL</h1>
@@ -130,12 +133,16 @@ export default function About() {
           <div className="about__info__item">
             <h1 className="about__info__heading">Experience</h1>
             <AboutInfoItem
-              title="2020-"
-              items={['Web designer and developer at Digitilise']}
+              title="2021-Current"
+              items={['Front End Developer at Contactable']}
+            />
+            <AboutInfoItem
+              title="2020-2021"
+              items={['Web designer and developer at DigitalMall']}
             />
             <AboutInfoItem
               title="2019-2020"
-              items={['Support technician  at DSG']}
+              items={['Support technician  at DigitalMall']}
             />
             <AboutInfoItem
               title="2017-2019"

@@ -43,9 +43,8 @@ export default function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-
   return (
-    <div>
+    <>
       <FormStyle>
         <div className="form-group">
           <label htmlFor="name">
@@ -63,7 +62,7 @@ export default function ContactForm() {
           <label htmlFor="email">
             Your Email
             <input
-              type="text"
+              type="email"
               id="email"
               name="email"
               value={email}
@@ -73,11 +72,11 @@ export default function ContactForm() {
         </div>
         <div className="form-group">
           <label htmlFor="message">
-            Your Message
+            Your message
             <textarea
               type="text"
               id="message"
-              message="message"
+              name="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
@@ -85,6 +84,6 @@ export default function ContactForm() {
         </div>
         <button type="submit">Send</button>
       </FormStyle>
-    </div>
+    </>
   );
 }

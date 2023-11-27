@@ -2,19 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from './PText';
 
-const AboutItemsStyles = styled.div`
+const AboutItemStyles = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 3rem;
   position: relative;
-
+  /* gap: 5rem; */
+  margin-top: 3rem;
   .title {
     font-size: 2.4rem;
   }
   .items {
     display: flex;
-    gap: 1.8rem;
+    gap: 1.5rem;
     position: absolute;
     left: 18rem;
   }
@@ -23,7 +23,6 @@ const AboutItemsStyles = styled.div`
     padding: 1rem;
     border-radius: 8px;
   }
-
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
@@ -39,11 +38,11 @@ const AboutItemsStyles = styled.div`
 `;
 
 export default function AboutInfoItem({
-  title = 'this is title',
-  items = ['HTML', 'CSS', 'JS'],
+  title = 'Title',
+  items = ['HTML', 'CSS'],
 }) {
   return (
-    <AboutItemsStyles>
+    <AboutItemStyles>
       <h1 className="title">{title}</h1>
       <div className="items">
         {items.map((item, index) => (
@@ -52,6 +51,6 @@ export default function AboutInfoItem({
           </div>
         ))}
       </div>
-    </AboutItemsStyles>
+    </AboutItemStyles>
   );
 }

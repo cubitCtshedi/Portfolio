@@ -1,21 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import projectImg from '../assets/images/projectImg.png';
+// import ProjectImg from '../assets/images/projectImg.png';
 
 const ProjectItemStyles = styled.div`
   .projectItem__img {
     width: 100%;
     height: 400px;
-    overflow: hidden;
     border-radius: 12px;
+    overflow: hidden;
     display: inline-block;
     border: 3px solid var(--gray-2);
     img {
       height: 100%;
     }
   }
-  .projectItem__Info {
+  .projectItem__info {
     margin-top: 1rem;
     background-color: var(--deep-dark);
     padding: 1rem;
@@ -35,21 +35,30 @@ const ProjectItemStyles = styled.div`
     }
   }
 `;
+
 export default function ProjectItem({
-  img = projectImg,
-  title = '',
-  desc = '',
+  img,
+  title = 'Project Name',
+  desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  path = '',
 }) {
+  const formattedLink = path;
   return (
     <ProjectItemStyles>
-      <Link to="/projects" className="projectItem__img">
-        <img src={img} alt="ProjectImg" />
-      </Link>
-      <div className="projectItem__Info">
-        <Link to="#">
-          <h3 className="projectItem__title"> {title}</h3>
+      <a href={formattedLink} className="projectItem__img">
+        <img src={img} alt="project img" />
+      </a>
+      {/* <Link to={path} className="projectItem__img">
+        <img src={img} alt="project img" />
+      </Link> */}
+      <div className="projectItem__info">
+        <Link to={formattedLink}>
+          <h3 className="projectItem__title">{title}</h3>
         </Link>
-        <p className="projectItem__desc"> {desc}</p>
+        <p className="projectItem__desc">{desc}</p>
+        <a href={formattedLink} target="_blank" rel="noopener noreferrer">
+          Visit Project
+        </a>
       </div>
     </ProjectItemStyles>
   );

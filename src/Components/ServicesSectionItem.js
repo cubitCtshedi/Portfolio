@@ -11,8 +11,8 @@ const ItemStyles = styled.div`
     }
   }
   .servicesItem__title {
-    font-size: 2.8rem;
-    font-family: 'Montserrat Semibold';
+    font-size: 2.5rem;
+    font-family: 'Montserrat SemiBold';
   }
   .para {
     margin-top: 2rem;
@@ -21,17 +21,14 @@ const ItemStyles = styled.div`
 
 export default function ServicesSectionItem({
   icon = <MdDesktopMac />,
-  title = 'This is the Title',
-  desc = 'This is the Desc',
+  title = 'Web Design',
+  desc = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ok",
 }) {
   return (
-    <ItemStyles>
-      <div className="servicesItem__icon">
-        {icon}
-
-        <div className="servicesItem__title">{title}</div>
-        <PText>{desc}</PText>
-      </div>
+    <ItemStyles className="servicesItem">
+      <div className="servicesItem__icon">{icon}</div>
+      <div className="servicesItem__title">{title}</div>
+      <PText>{desc}</PText>
     </ItemStyles>
   );
 }
