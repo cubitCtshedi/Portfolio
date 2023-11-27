@@ -6,7 +6,8 @@ course-layout.md
 
 # production
 /build
-
+/.vscode
+.vscode
 # Logs
 logs
 *.log
